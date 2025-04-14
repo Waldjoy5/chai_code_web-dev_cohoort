@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lan="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title> chai code </title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+
+            }
+            nav{
+                background-color: black;
+                color:antiquewhite;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                padding:20px 80px;
+                cursor:pointer;
+            }
+            ul{
+                display:flex;
+                
+              color:antiquewhite;
+                gap:30px;
+                
+                list-style-type:none;
+                cursor:pointer;
+            }
+
+            nav div button{
+                 
+               
+                padding:5px 6px;
+                border-radius: 5px;
+                cursor:pointer;
+                hover{  
+                    background-color: #0e37ec;
+                    color:#e90d0d;
+                  }  
+
+            }
+              nav div button:hover{  
+                background-color: #0e37ec;
+                color:#e90d0d;
+              }
+              
+              nav ul li a{
+                color:aquamarine;
+                text-decoration:none;
+              }
+              nav ul li a:hover{
+                background-color:darkkhaki;
+              }
+              .hero{
+                
+                background-color: black;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                padding:40px 80px;
+                
+              }
+              section p{
+                font-size: 1rem ;
+               
+                color:antiquewhite; 
+              }
+             .hero div{
+              
+              width: 50%;
+
+             }
+             .header{
+              font-size: 2rem;
+              font-weight: bolder;
+              color:antiquewhite
+             }
+             .hero button{
+              padding:6px 20px;
+
+              border-radius: 8px;
+
+              cursor:pointer;
+              width: 150px;
+             }
+             .hero button:hover{
+              background-color: #0e37ec;
+              color:#e90d0d;
+
+             }
+
+             .hero img{
+              width:100%;
+              height: 100%;
+              border-radius:20px;
+              object-fit:cover;
+             
+             }
+             .hero img:hover{
+              box-shadow:0 0 10px white;
+              transform:rotate(6deg);
+              transition:all 0.5s ease-in-out;
+             }
+             .logo-text{
+              font-size:200%;
+              font-weight: bolder;
+              text-align:center;
+              margin:20px ;
+             }
+             .client{
+
+              display:flex;
+              margin:20px 150px;
+              justify-content: space-between;
+              align-items: center;
+              border:2px solid black;
+              border-radius: 20px;
+              padding:40px 60px;
+             }
+             .client div img{
+              width:200px;
+              height: 100;
+              object-fit:cover;
+              border-radius:10px;
+
+             }
+             .three-card {
+              margin:15px 150px;
+              border:1px solid black;
+              display:flex;
+              border-radius: 20px;
+        
+              padding:30px 60px;
+              box-shadow: 0 0 10px;
+             }
+             .card{
+              border:2px solid black;
+              margin:0px 60px;
+              text-align: center;
+              border-radius: 20px;
+              box-shadow: 0 0 10px;
+              padding: 10px;
+
+              
+             }
+             .card img{
+              width:150px;
+              margin:10px;
+              border-radius: 10px;
+              object-fit:cover;
+              
+            
+             }
+             .card p{
+              color:black;
+              margin:10px;
+             }
+             h3{
+              margin:10px;
+             }
+               
+             /* media query */ 
+
+             @media screen and (max-width:1080px)
+             {
+              body{
+                background-color:aqua
+              }
+              .three-card{
+              flex-direction:column;
+              justify-content: center;
+              }
+             
+             .three-card div{
+              width:80%;
+             }
+
+              .client {
+                flex-direction:column;
+                
+
+              }
+              img{
+                width:80%;
+              }
+             }  
+              
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div >logo</div>
+            <div>
+              <ul>
+                <li><a href="#" target="_blank">Home</a>   </li>
+                <li><a href="#" target="_blank"> Content</a></li>
+                <li><a href="#" target="_blank">About </a></li>
+                <li><a href="#" target="_blank">Contact</a> </li>
+              </ul>
+            </div>
+            <div>
+              
+                <button>sing up</button>
+                <button>log in</button>
+            </div>
+        </nav>
+        <section  class="hero">
+          <div ><h1 class="header">Hero section</h1>
+          <p class="font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa atque cupiditate nostrum tenetur. 
+            Cupiditate, quia! Veniam deleniti totam consectetur. 
+            Cupiditate eos maxime quod odio voluptatem molestiae eligendi adipisci, saepe esse.</p>
+
+            <br><button>sign up</button>
+          </div>
+          <div >
+            <img  width="450px" height="250px" src="./picture/2024-nissan-gt-r-gt-r-t-spec.jpg" alt="no image"/>
+          </div>
+          </section>
+
+          <h2 class="logo-text"> Our clients</h2>
+          
+          <section class="client">
+            <div><img src="./picture/download.jpg" alt=""/> </div>
+            <div><img src="./picture/download (3).jpg" alt=""/> </div>
+            <div><img src="./picture/download (2).jpg" alt=""/> </div>
+            <div><img src="./picture/download (4).jpg" alt=""/> </div>
+          </section>
+
+          <section class="three-card">
+            <div class="card">
+            
+             <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600"   alt="no image"/>
+             <h3>Topic</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Rem perspiciatis facere atque laudantium ex cumque corrupti reprehenderit, eius error ut!</p>
+            </div>
+
+            <div class="card">
+              
+             <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600"   alt="no image"/>
+             <h3>Topic</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Rem perspiciatis facere atque laudantium ex cumque corrupti reprehenderit, eius error ut!</p>
+            </div>
+
+            <div class="card">
+              
+             <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600"   alt="no image"/>
+             <h3>Topic</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Rem perspiciatis facere atque laudantium ex cumque corrupti reprehenderit, eius error ut!</p>
+            </div>
+          </section>
+
+</html>

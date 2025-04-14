@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        div{
+            padding:5px;
+            border:2px solid black;
+        }
+        .parent{
+
+            background-color:aquamarine;
+            height: 300px;
+            display:flex;
+            justify-content:start; 
+            align-items:center;
+            flex-wrap:wrap;
+           
+             
+        }
+        .child{
+            
+
+            background-color:whitesmoke;
+            width:100px;
+            height: 30px;
+           
+
+        }
+
+         #cl-2{
+            background-color: blue;
+            flex:20;
+            
+           }
+           #cl-3{
+                flex:10;
+           }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">ITEM 1</div>
+        <div id="cl-2" class="child">ITEM 2</div>
+        <div id="cl-3" class="child" >ITEM 3</div>
+        <div  class="child">ITEM 4 </div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+button{
+    padding:15;
+    border-radius:20px;
+    font-size:25px;
+    cursor:pointer;
+    color:grey;
+    background-color:black;
+
+}
+p{
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card1{
+    background-color:yellow;
+}
+.card2{
+    background-color:red;
+}
+.card3{
+    background-color:greenyellow;
+}
+.card4{
+    background-color:orange;
+}
+.parent{
+    background-color:pink;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+ .inline{
+    background-color:greenyellow;
+    display:flex;
+    gap:400px;
+ }
